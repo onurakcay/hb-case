@@ -3,10 +3,10 @@
 }
 $primary: #ff6000;
 $secondary: #484848;
-
-.productCardWrapper {
-  .imageWrapper {
-    border-radius: 4px;
-    border: 1px solid#E5E5E5;
+.container {
+  padding: pxToRem(25) pxToRem(80);
+  .content{
+    display: flex;
+    width: 100%;
   }
 }

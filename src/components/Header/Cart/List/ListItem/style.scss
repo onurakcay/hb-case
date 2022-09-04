@@ -9,6 +9,8 @@ $red: #f90000;
   display: flex;
   align-items: flex-start;
   height: pxToRem(65);
+  background-color: #fff;
+
   .productImage {
     width: pxToRem(40);
     height: pxToRem(60);

@@ -1,0 +1,12 @@
+@function pxToRem($pxValue) {
+  @return ($pxValue / 16) + rem;
+}
+$primary: #ff6000;
+$secondary: #484848;
+
+.productListWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: pxToRem(3);
+}

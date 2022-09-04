@@ -1,0 +1,45 @@
+@function pxToRem($pxValue) {
+  @return ($pxValue / 16) + rem;
+}
+$primary: #ff6000;
+$secondary: #484848;
+
+.searchResultHeaderWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .information {
+    .title {
+      font-weight: 700;
+      font-size: pxToRem(28);
+      line-height: pxToRem(28);
+      color: $secondary;
+    }
+    .searchWordWrapper {
+      display: flex;
+      font-weight: 400;
+      font-size: pxToRem(15);
+      line-height: pxToRem(15);
+      margin-top: pxToRem(4);
+      .label {
+        color: #b0b0b0;
+        margin-right: pxToRem(4);
+      }
+      .value {
+        color: #000000;
+      }
+    }
+  }
+  .orderFilterWrapper {
+    .orderButton {
+      padding: pxToRem(12) pxToRem(18);
+      border: 1px solid #b0b0b0;
+      border-radius: 4px;
+      background-color: transparent;
+      color: #b0b0b0;
+      font-size: pxToRem(17);
+      font-weight: lighter;
+      position: relative;
+    }
+  }
+}

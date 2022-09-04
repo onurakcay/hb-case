@@ -1,0 +1,32 @@
+@function pxToRem($pxValue) {
+  @return ($pxValue / 16) + rem;
+}
+$primary: #ff6000;
+$secondary: #484848;
+
+.filterWrapper {
+  width: 12%;
+  margin-right: pxToRem(16);
+  margin-top: pxToRem(15);
+  .filterItem {
+    margin-top: pxToRem(24);
+    .title {
+      font-weight: 500;
+      font-size: pxToRem(16);
+      line-height: pxToRem(24);
+    }
+    .filterTextWrapper {
+      margin-top: pxToRem(20);
+      .filterText {
+        font-size: pxToRem(14);
+        font-weight: 400;
+        line-height: pxToRem(24);
+        color: #646464;
+        &:hover {
+          cursor: pointer;
+          color: $primary;
+        }
+      }
+    }
+  }
+}
