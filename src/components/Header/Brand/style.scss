@@ -1,0 +1,11 @@
+@function pxToRem($pxValue) {
+  @return ($pxValue / 16) + rem;
+}
+$primary: #ff6000;
+$secondary: #484848;
+
+.brand {
+  color: $primary;
+  font-size: pxToRem(24);
+  font-weight: bold;
+}

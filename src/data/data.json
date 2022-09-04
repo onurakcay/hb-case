@@ -1,0 +1,67 @@
+{
+  "products": [
+    {
+      "id": "01",
+      "name": "Apple iPhone 11 Pro Maxi Phone 11 Pro Max iPhone 11 (Max 2 Line)...",
+      "brand": "Apple",
+      "color": "Siyah",
+      "price": "124,00",
+      "discountRatio": "12",
+      "unit": "TL"
+    },
+    {
+      "id": "02",
+      "name": "Apple iPhone 11",
+      "brand": "Apple",
+      "color": "Sarı",
+      "price": "800,00",
+      "discountRatio": "2",
+      "unit": "TL"
+    },
+    {
+      "id": "03",
+      "name": "Apple iPhone 11 Pro Maxi Phone 11 Pro Max iPhone 11 (Max 2 Line)...",
+      "brand": "Apple",
+      "color": "Kırmızı",
+      "price": "124,00",
+      "discountRatio": "12",
+      "unit": "TL"
+    },
+    {
+      "id": "04",
+      "name": "Apple iPhone 11 Pro Maxi Phone 11 Pro Max iPhone 11 (Max 2 Line)...",
+      "brand": "Apple",
+      "color": "Siyah",
+      "price": "124,00",
+      "discountRatio": "12",
+      "unit": "TL"
+    },
+    {
+      "id": "05",
+      "name": "Apple iPhone 11 Pro Maxi Phone 11 Pro Max iPhone 11 (Max 2 Line)...",
+      "brand": "Apple",
+      "color": "Siyah",
+      "price": "124,00",
+      "discountRatio": "12",
+      "unit": "TL"
+    },
+    {
+      "id": "06",
+      "name": "Apple iPhone 11 Pro Maxi Phone 11 Pro Max iPhone 11 (Max 2 Line)...",
+      "brand": "Apple",
+      "color": "Siyah",
+      "price": "124,00",
+      "discountRatio": "12",
+      "unit": "TL"
+    },
+    {
+      "id": "07",
+      "name": "Apple iPhone 11 Pro Maxi Phone 11 Pro Max iPhone 11 (Max 2 Line)...",
+      "brand": "Apple",
+      "color": "Siyah",
+      "price": "124,00",
+      "discountRatio": "12",
+      "unit": "TL"
+    }
+  ]
+}

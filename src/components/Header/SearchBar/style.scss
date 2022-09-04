@@ -1,0 +1,24 @@
+@function pxToRem($pxValue) {
+  @return ($pxValue / 16) + rem;
+}
+$primary: #ff6000;
+$secondary: #484848;
+
+.searchWrapper {
+  width: 100%;
+  max-width: pxToRem(695);
+  padding: pxToRem(15) pxToRem(27);
+  background-color: #EEEEEE;
+  display: flex;
+  align-items: center;
+  border-radius: pxToRem(100);
+  input{
+    width: 100%;
+    margin: 0 pxToRem(12);
+    background-color: transparent;
+    border: none;
+    &:focus{
+      outline: none;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+@function pxToRem($pxValue) {
+  @return ($pxValue / 16) + rem;
+}
+$primary: #ff6000;
+$secondary: #484848;
+$grey:#B0B0B0;
+
+.listWrapper {
+  padding: pxToRem(20) pxToRem(21);
+  position: absolute;
+  border: 1px solid $grey;
+  border-radius: 4px;
+  right: 0;
+  top: 99%;
+  z-index: -1;
+  max-width: pxToRem(360);
+  width: max-content;
+}
