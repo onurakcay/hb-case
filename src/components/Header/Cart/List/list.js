@@ -1,10 +1,11 @@
 import React from 'react';
 import { ListItem } from './ListItem/listItem';
 import './style.css';
+import { useSelector, useDispatch } from 'react-redux';
 
 export function List(props) {
+  const cartList = useSelector(state => state.cart.value);
   let showHideList = props.showHideList;
-  console.log(showHideList);
 
   let [over, setOver] = React.useState(showHideList);
   if (over) {
@@ -27,10 +28,9 @@ export function List(props) {
           setOver(false);
         }}
       >
-        <ListItem />
-        <ListItem />
-        <ListItem />
-        <ListItem />
+        {cartList.map(_product => {
+          return <ListItem key={_product.id} product={_product} />;
+        })}
       </div>
     );
   }

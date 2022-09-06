@@ -1,8 +1,9 @@
 import React from 'react';
 import { List } from './List/list';
 import './style.css';
-
+import { useSelector, useDispatch } from 'react-redux';
 export function Cart(props) {
+  const cartList = useSelector(state => state.cart.value);
   let showHideList = false;
   let [over, setOver] = React.useState(false);
   if (over) {
@@ -13,7 +14,7 @@ export function Cart(props) {
   return (
     <div className="cartWrapper">
       <button
-        class="cartButton"
+        className="cartButton"
         onMouseOver={() => setOver(true)}
         onMouseOut={() => {
           setTimeout(() => {
@@ -22,8 +23,8 @@ export function Cart(props) {
         }}
       >
         Sepetim
-        <div class="notification">4</div>
-        <List showHideList={showHideList} />
+        <div className="notification">{cartList.length}</div>
+        {cartList.length ? <List showHideList={showHideList} /> : null}
       </button>
     </div>
   );

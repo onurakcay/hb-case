@@ -1,18 +1,23 @@
 import React from 'react';
 import './style.css';
+import { Modal } from '../../../../Modal/modal';
 
 export function ListItem(props) {
+  let product = props.product;
+  let [show, setShow] = React.useState(false);
+
   return (
     <div className="listItemWrapper">
-      <div class="productImage">
-        <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/IPhone_13_Pro_vector.svg/237px-IPhone_13_Pro_vector.svg.png'/>
+      <div className="productImage">
+        <img src={product.image} />
       </div>
-      <div class="detailWrapper">
-        <span class="title">iPhone 11 Kırmızı Kılıflı Garantili Telefon</span>
-        <div class="removeButton">
-          <button >Kaldır</button>
+      <div className="detailWrapper">
+        <span className="title">{product.name}</span>
+        <div className="removeButton">
+          <button onClick={() => setShow(true)}>Kaldır</button>
         </div>
       </div>
+      {show && <Modal product={product} setShow={setShow} />}
     </div>
   );
 }

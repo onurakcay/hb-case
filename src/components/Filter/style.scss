@@ -26,6 +26,9 @@ $secondary: #484848;
           cursor: pointer;
           color: $primary;
         }
+        &.active {
+          color: $primary;
+        }
       }
     }
   }

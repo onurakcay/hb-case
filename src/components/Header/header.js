@@ -7,7 +7,7 @@ import './style.css';
 
 export function Header(props) {
   return (
-    <div class="headerWrapper">
+    <div className="headerWrapper">
       <Brand />
       <SearchBar />
       <Cart />
@@ -16,5 +16,5 @@ export function Header(props) {
 }
 
 function logo() {
-  <span class="logo">hepsiburada</span>;
+  <span className="logo">hepsiburada</span>;
 }
