@@ -3,10 +3,9 @@ import { Filter } from './components/Filter/filter';
 import { Header } from './components/Header/header';
 import { ProductList } from './components/ProductList/productList';
 import { SearchResultHeader } from './components/SearchResultHeader/searchResultHeader';
-import data from './data/data.json';
 
 function App() {
-  localStorage.setItem('productData', JSON.stringify(data));
+
   return (
     <div>
       <Header />

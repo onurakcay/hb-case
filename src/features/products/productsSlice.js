@@ -1,9 +1,9 @@
 import { createSlice } from '@reduxjs/toolkit';
-
+import data from'../../data/data.json';
 export const productsSlice = createSlice({
   name: 'products',
   initialState: {
-    value: JSON.parse(localStorage.getItem('productData'))
+    value: JSON.parse(localStorage.getItem('productData')) ?? data
   },
   reducers: {
     search: (state, action) => {
