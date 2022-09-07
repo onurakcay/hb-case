@@ -1,9 +1,9 @@
 import React from 'react';
 import { List } from './List/list';
 import './style.css';
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
 export function Cart(props) {
-  const cartList = useSelector(state => state.cart.value);
+  const cartList = useSelector(state => state.cart?.value);
   let showHideList = false;
   let [over, setOver] = React.useState(false);
   if (over) {
@@ -23,8 +23,8 @@ export function Cart(props) {
         }}
       >
         Sepetim
-        <div className="notification">{cartList.length}</div>
-        {cartList.length ? <List showHideList={showHideList} /> : null}
+        <div className="notification">{cartList?.length}</div>
+        {cartList?.length && <List showHideList={showHideList} />}
       </button>
     </div>
   );

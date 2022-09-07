@@ -15,7 +15,7 @@ export function SearchBar(props) {
   return (
     <div className="searchWrapper">
       <AiOutlineSearch />
-      <input placeholder="25 milyon ürün içinde ara" onChange={handleChange}></input>
+      <input type="search" placeholder="25 milyon ürün içinde ara" onChange={handleChange}></input>
     </div>
   );
 }

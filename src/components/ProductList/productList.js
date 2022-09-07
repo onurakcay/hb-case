@@ -4,10 +4,10 @@ import './style.css';
 import { useSelector } from 'react-redux';
 
 export function ProductList(props) {
-  const productsData = useSelector(state => state.products.value.products);
+  const productsData = useSelector(state => state.products?.value.products);
   return (
     <div className="productListWrapper">
-      {productsData.map(function (_product, index) {
+      {productsData && productsData.map(function (_product, index) {
         return <ProductCard key={_product.id} product={_product} />;
       })}
     </div>

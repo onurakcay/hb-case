@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { searchByOrder } from '../../features/products/productsSlice';
 import { setFilter } from '../../features/filters/filterSlice';
 export function SearchResultHeader(props) {
-  const selectedFilter = useSelector(state => state.filter.value);
+  const selectedFilter = useSelector(state => state.filter?.value);
   const dispatch = useDispatch();
 
   function handleChange(event) {

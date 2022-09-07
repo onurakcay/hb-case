@@ -14,7 +14,3 @@ export function Header(props) {
     </div>
   );
 }
-
-function logo() {
-  <span className="logo">hepsiburada</span>;
-}

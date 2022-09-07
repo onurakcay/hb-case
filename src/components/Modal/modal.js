@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css';
 import { removeCart } from '../../features/cart/cartSlice';
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 
 export function Modal({ product, setShow }) {
   const dispatch = useDispatch();

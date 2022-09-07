@@ -1,10 +1,10 @@
 import React from 'react';
 import { ListItem } from './ListItem/listItem';
 import './style.css';
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
 
 export function List(props) {
-  const cartList = useSelector(state => state.cart.value);
+  const cartList = useSelector(state => state.cart?.value);
   let showHideList = props.showHideList;
 
   let [over, setOver] = React.useState(showHideList);

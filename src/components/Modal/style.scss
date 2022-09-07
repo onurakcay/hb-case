@@ -48,7 +48,7 @@ $secondary: #484848;
   }
   .actions {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     padding: pxToRem(20);
     button {
       border-radius: 4px;

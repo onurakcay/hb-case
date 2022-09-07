@@ -71,7 +71,7 @@ export function ProductCard(props) {
     >
       <div className="productFrame">
         <div className="productImageWrapper">
-          <img src={product.image} />
+          <img src={product.image} alt="product"/>
         </div>
         <div className="productInfoWrapper">
           <div className="title">{product.name}</div>
